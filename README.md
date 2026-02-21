@@ -46,7 +46,7 @@ This is a commercial-style website concept created as a project for a Web Design
 
 ##Live Demo
 
--The website is hosted for free on Netlify: https://brightsmile-dental.netlify.app
+-The website is hosted here: https://markoj612.github.io/dentist-site-concept/
 
 #Notes
 
