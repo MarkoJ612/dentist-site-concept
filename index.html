@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Smile Dental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/_sdk/element_sdk.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">        
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+</head>
+
+<body class="h-full font-body">
+    <div id="app-wrapper" class="w-full h-full overflow-auto" style="background-color: #FAF7F2;"><!-- Navigation -->
+        <header class="w-full sticky top-0 z-50 backdrop-blur-md"
+            style="background-color: rgba(250,247,242,0.92); border-bottom: 1px solid rgba(45,80,70,0.08);">
+            <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3"><!-- Tooth SVG Logo -->
+                    <svg width="32" height="32" viewbox="0 0 40 40" fill="none">
+                        <path
+                            d="M20 4C14 4 10 8 8 12C6 16 7 22 9 28C10 31 12 36 14 36C16 36 17 32 18 28C18.5 26 19.5 24 20 24C20.5 24 21.5 26 22 28C23 32 24 36 26 36C28 36 30 31 31 28C33 22 34 16 32 12C30 8 26 4 20 4Z"
+                            id="logo-tooth" fill="#2D5046" stroke="#2D5046" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg><span id="nav-practice-name" class="font-heading text-xl" style="color: #2D5046;">Bright Smile
+                        Dental</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8"><a href="#services"
+                        class="text-sm font-medium hover:opacity-70 transition-opacity"
+                        style="color: #5A7A6F;">Services</a> <a href="#about"
+                        class="text-sm font-medium hover:opacity-70 transition-opacity"
+                        style="color: #5A7A6F;">About</a> <a href="#contact"
+                        class="text-sm font-medium hover:opacity-70 transition-opacity"
+                        style="color: #5A7A6F;">Contact</a> <button id="nav-cta"
+                        class="cta-btn text-sm font-semibold px-5 py-2.5 rounded-full text-white"
+                        style="background-color: #C8785A;"
+                        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"> Book Now
+                    </button>
+                </div><!-- Mobile menu button --> <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg"
+                    style="color: #2D5046;" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg></button>
+            </nav><!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3"><a href="#services"
+                    class="text-sm font-medium py-2" style="color: #5A7A6F;"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a> <a
+                    href="#about" class="text-sm font-medium py-2" style="color: #5A7A6F;"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a> <a
+                    href="#contact" class="text-sm font-medium py-2" style="color: #5A7A6F;"
+                    onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a> <button
+                    class="cta-btn text-sm font-semibold px-5 py-2.5 rounded-full text-white w-full"
+                    style="background-color: #C8785A;"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'}); document.getElementById('mobile-menu').classList.add('hidden')">Book
+                    Now</button>
+            </div>
+        </header>
+        <main><!-- Hero Section -->
+            <section class="hero-pattern relative overflow-hidden" style="background-color: #2D5046;">
+                <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1 text-center md:text-left">
+                        <p class="anim-fade-up text-sm font-semibold tracking-widest uppercase mb-4"
+                            style="color: #C8785A;" id="hero-tagline">Welcome to Bright Smile Dental</p>
+                        <h1 id="hero-heading"
+                            class="anim-fade-up-d1 font-heading text-4xl md:text-5xl lg:text-6xl leading-tight mb-6"
+                            style="color: #FAF7F2;">Your Smile Deserves the Best Care</h1>
+                        <p id="hero-subtext" class="anim-fade-up-d2 text-lg md:text-xl leading-relaxed mb-8 max-w-lg"
+                            style="color: rgba(250,247,242,0.75);">Compassionate, modern dentistry for the whole family.
+                            We create beautiful, healthy smiles in a warm and welcoming environment.</p>
+                        <div class="anim-fade-up-d3 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <button id="hero-cta"
+                                class="cta-btn font-semibold px-8 py-3.5 rounded-full text-white text-lg"
+                                style="background-color: #C8785A;"
+                                onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"> Book
+                                an Appointment </button> <button
+                                class="font-semibold px-8 py-3.5 rounded-full text-lg border-2 hover:bg-white hover:bg-opacity-10 transition-colors"
+                                style="color: #FAF7F2; border-color: rgba(250,247,242,0.3);"
+                                onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"> Our
+                                Services </button>
+                        </div>
+                    </div><!-- Hero illustration -->
+                    <div class="anim-scale-in flex-1 flex justify-center">
+                        <div class="relative">
+                            <div class="w-64 h-64 md:w-80 md:h-80 rounded-full flex items-center justify-center"
+                                style="background: rgba(250,247,242,0.08);">
+                                <div class="w-48 h-48 md:w-60 md:h-60 rounded-full flex items-center justify-center"
+                                    style="background: rgba(250,247,242,0.06);">
+                                    <svg width="120" height="140" viewbox="0 0 120 140" fill="none">
+                                        <path
+                                            d="M60 8C40 8 26 20 20 32C14 44 17 64 23 84C27 95 33 110 39 112C45 114 48 100 51 88C53 80 57 72 60 72C63 72 67 80 69 88C72 100 75 114 81 112C87 110 93 95 97 84C103 64 106 44 100 32C94 20 80 8 60 8Z"
+                                            fill="rgba(250,247,242,0.15)" stroke="rgba(250,247,242,0.3)"
+                                            stroke-width="2.5" />
+                                        <path d="M42 48C42 48 50 56 60 56C70 56 78 48 78 48"
+                                            stroke="rgba(250,247,242,0.25)" stroke-width="2" stroke-linecap="round" />
+                                        <!-- Sparkle -->
+                                        <circle cx="85" cy="25" r="3" fill="#C8785A" opacity="0.8" />
+                                        <circle cx="92" cy="35" r="2" fill="#C8785A" opacity="0.5" />
+                                        <circle cx="35" cy="30" r="2" fill="#C8785A" opacity="0.6" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- Stats Bar -->
+            <section class="py-12 border-b" style="background-color: #FFFFFF; border-color: rgba(45,80,70,0.06);">
+                <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="stat-item">
+                        <p class="font-heading text-3xl md:text-4xl" style="color: #2D5046;">15+</p>
+                        <p class="text-sm mt-1" style="color: #5A7A6F;">Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="font-heading text-3xl md:text-4xl" style="color: #2D5046;">5000+</p>
+                        <p class="text-sm mt-1" style="color: #5A7A6F;">Happy Patients</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="font-heading text-3xl md:text-4xl" style="color: #2D5046;">98%</p>
+                        <p class="text-sm mt-1" style="color: #5A7A6F;">Satisfaction Rate</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="font-heading text-3xl md:text-4xl" style="color: #2D5046;">4.9</p>
+                        <p class="text-sm mt-1" style="color: #5A7A6F;">⭐ Rating</p>
+                    </div>
+                </div>
+            </section><!-- Services Section -->
+            <section id="services" class="py-20">
+                <div class="max-w-6xl mx-auto px-6">
+                    <div class="text-center mb-14">
+                        <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color: #C8785A;">What We
+                            Offer</p>
+                        <h2 id="services-heading" class="font-heading text-3xl md:text-4xl" style="color: #2D5046;">Our
+                            Services</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6"><!-- Service 1 -->
+                        <div class="service-card rounded-2xl p-8"
+                            style="background-color: #FFFFFF; border: 1px solid rgba(45,80,70,0.06);">
+                            <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
+                                style="background-color: rgba(200,120,90,0.1);">
+                                <svg width="28" height="28" viewbox="0 0 28 28" fill="none">
+                                    <path d="M14 3C8 3 4 7 4 13C4 19 8 25 14 25C20 25 24 19 24 13C24 7 20 3 14 3Z"
+                                        stroke="#C8785A" stroke-width="2" fill="none" />
+                                    <path d="M10 13H18M14 9V17" stroke="#C8785A" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3 class="font-heading text-xl mb-3" style="color: #2D5046;">General Dentistry</h3>
+                            <p class="text-sm leading-relaxed" style="color: #5A7A6F;">Comprehensive checkups,
+                                cleanings, fillings, and preventive care to keep your smile healthy year-round.</p>
+                        </div><!-- Service 2 -->
+                        <div class="service-card rounded-2xl p-8"
+                            style="background-color: #FFFFFF; border: 1px solid rgba(45,80,70,0.06);">
+                            <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
+                                style="background-color: rgba(200,120,90,0.1);">
+                                <svg width="28" height="28" viewbox="0 0 28 28" fill="none">
+                                    <path d="M14 4L16.5 10L23 11L18.5 16L19.5 23L14 20L8.5 23L9.5 16L5 11L11.5 10L14 4Z"
+                                        stroke="#C8785A" stroke-width="2" fill="none" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="font-heading text-xl mb-3" style="color: #2D5046;">Cosmetic Dentistry</h3>
+                            <p class="text-sm leading-relaxed" style="color: #5A7A6F;">Teeth whitening, veneers, and
+                                smile makeovers designed to give you the confident smile you deserve.</p>
+                        </div><!-- Service 3 -->
+                        <div class="service-card rounded-2xl p-8"
+                            style="background-color: #FFFFFF; border: 1px solid rgba(45,80,70,0.06);">
+                            <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
+                                style="background-color: rgba(200,120,90,0.1);">
+                                <svg width="28" height="28" viewbox="0 0 28 28" fill="none">
+                                    <path
+                                        d="M7 14C7 10.134 10.134 7 14 7C17.866 7 21 10.134 21 14C21 17.866 17.866 21 14 21"
+                                        stroke="#C8785A" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M14 21C14 21 10 19 10 14" stroke="#C8785A" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <circle cx="14" cy="14" r="2" fill="#C8785A" />
+                                </svg>
+                            </div>
+                            <h3 class="font-heading text-xl mb-3" style="color: #2D5046;">Orthodontics</h3>
+                            <p class="text-sm leading-relaxed" style="color: #5A7A6F;">Modern braces and clear aligners
+                                for straighter teeth and a more aligned bite — for all ages.</p>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- About Section -->
+            <section id="about" class="py-20" style="background-color: #FFFFFF;">
+                <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-14">
+                    <!-- Doctor portrait area -->
+                    <div class="flex-shrink-0">
+                        <div class="w-64 h-72 md:w-72 md:h-80 rounded-3xl flex items-center justify-center relative overflow-hidden"
+                            style="background: linear-gradient(145deg, #2D5046, #3d6a5e);">
+                            <svg width="100" height="120" viewbox="0 0 100 120" fill="none">
+                                <circle cx="50" cy="38" r="22" fill="rgba(250,247,242,0.15)" />
+                                <path d="M20 110C20 85 35 72 50 72C65 72 80 85 80 110" fill="rgba(250,247,242,0.12)" />
+                                <circle cx="43" cy="35" r="2" fill="rgba(250,247,242,0.3)" />
+                                <circle cx="57" cy="35" r="2" fill="rgba(250,247,242,0.3)" />
+                                <path d="M45 43C45 43 48 46 50 46C52 46 55 43 55 43" stroke="rgba(250,247,242,0.25)"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                            <div class="absolute bottom-4 left-4 right-4 text-center">
+                                <p id="doctor-name-badge" class="font-heading text-lg" style="color: #FAF7F2;">Dr. Sarah
+                                    Mitchell</p>
+                                <p class="text-xs mt-1" style="color: rgba(250,247,242,0.6);">DDS, FAGD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color: #C8785A;">Meet
+                            Your Dentist</p>
+                        <h2 id="about-heading" class="font-heading text-3xl md:text-4xl mb-6" style="color: #2D5046;">
+                            Caring for Your Smile, One Visit at a Time</h2>
+                        <p id="about-text" class="text-base leading-relaxed mb-6" style="color: #5A7A6F;">With over 15
+                            years of experience, our practice combines the latest dental technology with a gentle,
+                            patient-first approach. We believe everyone deserves a smile they can be proud of, and we're
+                            here to make that happen in a comfortable, stress-free setting.</p>
+                        <div class="flex flex-wrap gap-4 justify-center md:justify-start"><span
+                                class="px-4 py-2 rounded-full text-sm font-medium"
+                                style="background-color: rgba(45,80,70,0.06); color: #2D5046;">🎓 Board Certified</span>
+                            <span class="px-4 py-2 rounded-full text-sm font-medium"
+                                style="background-color: rgba(45,80,70,0.06); color: #2D5046;">🏥 Modern
+                                Technology</span> <span class="px-4 py-2 rounded-full text-sm font-medium"
+                                style="background-color: rgba(45,80,70,0.06); color: #2D5046;">💚 Gentle Care</span>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- Testimonials -->
+            <section class="py-20">
+                <div class="max-w-6xl mx-auto px-6">
+                    <div class="text-center mb-14">
+                        <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color: #C8785A;">
+                            Testimonials</p>
+                        <h2 class="font-heading text-3xl md:text-4xl" style="color: #2D5046;">What Our Patients Say</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="rounded-2xl p-7"
+                            style="background-color: #FFFFFF; border: 1px solid rgba(45,80,70,0.06);">
+                            <p class="text-yellow-400 text-lg mb-3">⭐⭐⭐⭐⭐</p>
+                            <p class="text-sm leading-relaxed mb-5" style="color: #5A7A6F;">"The best dental experience
+                                I've ever had. The team was so kind and gentle. My kids actually look forward to their
+                                appointments!"</p>
+                            <p class="font-semibold text-sm" style="color: #2D5046;">— Maria L.</p>
+                        </div>
+                        <div class="rounded-2xl p-7"
+                            style="background-color: #FFFFFF; border: 1px solid rgba(45,80,70,0.06);">
+                            <p class="text-yellow-400 text-lg mb-3">⭐⭐⭐⭐⭐</p>
+                            <p class="text-sm leading-relaxed mb-5" style="color: #5A7A6F;">"I was terrified of the
+                                dentist before coming here. They made me feel completely at ease. My smile has never
+                                looked better!"</p>
+                            <p class="font-semibold text-sm" style="color: #2D5046;">— James T.</p>
+                        </div>
+                        <div class="rounded-2xl p-7"
+                            style="background-color: #FFFFFF; border: 1px solid rgba(45,80,70,0.06);">
+                            <p class="text-yellow-400 text-lg mb-3">⭐⭐⭐⭐⭐</p>
+                            <p class="text-sm leading-relaxed mb-5" style="color: #5A7A6F;">"Professional, modern, and
+                                truly caring. The whitening results were amazing. I can't stop smiling now!"</p>
+                            <p class="font-semibold text-sm" style="color: #2D5046;">— Rachel K.</p>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- Contact / CTA Section -->
+            <section id="contact" class="py-20" style="background-color: #2D5046;">
+                <div class="max-w-5xl mx-auto px-6 text-center">
+                    <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color: #C8785A;">Get in Touch
+                    </p>
+                    <h2 class="font-heading text-3xl md:text-4xl mb-4" style="color: #FAF7F2;">Ready for a Brighter
+                        Smile?</h2>
+                    <p class="text-lg mb-10 max-w-2xl mx-auto" style="color: rgba(250,247,242,0.65);">Contact us today
+                        to schedule your appointment. We can't wait to meet you!</p>
+                    <div class="grid md:grid-cols-3 gap-6 mb-10">
+                        <div class="rounded-2xl p-6" style="background: rgba(250,247,242,0.06);">
+                            <p class="text-2xl mb-2">📞</p>
+                            <p class="font-semibold text-sm mb-1" style="color: #FAF7F2;">Phone</p>
+                            <p id="contact-phone" class="text-sm" style="color: rgba(250,247,242,0.65);">(555) 123-4567
+                            </p>
+                        </div>
+                        <div class="rounded-2xl p-6" style="background: rgba(250,247,242,0.06);">
+                            <p class="text-2xl mb-2">📍</p>
+                            <p class="font-semibold text-sm mb-1" style="color: #FAF7F2;">Address</p>
+                            <p id="contact-address" class="text-sm" style="color: rgba(250,247,242,0.65);">123 Smile
+                                Avenue, Suite 200</p>
+                        </div>
+                        <div class="rounded-2xl p-6" style="background: rgba(250,247,242,0.06);">
+                            <p class="text-2xl mb-2">🕐</p>
+                            <p class="font-semibold text-sm mb-1" style="color: #FAF7F2;">Hours</p>
+                            <p id="contact-hours" class="text-sm" style="color: rgba(250,247,242,0.65);">Mon–Fri: 8am –
+                                6pm</p>
+                        </div>
+                    </div><button id="contact-cta"
+                        class="cta-btn font-semibold px-10 py-4 rounded-full text-white text-lg"
+                        style="background-color: #C8785A;"> Call to Book Now </button>
+                </div>
+            </section>
+        </main><!-- Footer -->
+        <footer class="py-8 border-t" style="background-color: #FAF7F2; border-color: rgba(45,80,70,0.08);">
+            <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                    <svg width="20" height="20" viewbox="0 0 40 40" fill="none">
+                        <path
+                            d="M20 4C14 4 10 8 8 12C6 16 7 22 9 28C10 31 12 36 14 36C16 36 17 32 18 28C18.5 26 19.5 24 20 24C20.5 24 21.5 26 22 28C23 32 24 36 26 36C28 36 30 31 31 28C33 22 34 16 32 12C30 8 26 4 20 4Z"
+                            fill="#2D5046" />
+                    </svg><span id="footer-practice-name" class="font-heading text-sm" style="color: #2D5046;">Bright
+                        Smile Dental</span>
+                </div>
+                <p class="text-xs" style="color: #5A7A6F;">© 2024 All rights reserved. Your comfort is our priority.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

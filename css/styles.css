@@ -1,0 +1,102 @@
+body {
+            box-sizing: border-box;
+        }
+
+        .font-heading {
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .font-body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.92);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .anim-fade-up {
+            animation: fadeUp 0.7s ease-out forwards;
+            opacity: 0;
+        }
+
+        .anim-fade-up-d1 {
+            animation: fadeUp 0.7s 0.1s ease-out forwards;
+            opacity: 0;
+        }
+
+        .anim-fade-up-d2 {
+            animation: fadeUp 0.7s 0.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        .anim-fade-up-d3 {
+            animation: fadeUp 0.7s 0.3s ease-out forwards;
+            opacity: 0;
+        }
+
+        .anim-fade-up-d4 {
+            animation: fadeUp 0.7s 0.4s ease-out forwards;
+            opacity: 0;
+        }
+
+        .anim-scale-in {
+            animation: scaleIn 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .cta-btn {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-item {
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Subtle tooth pattern for hero */
+        .hero-pattern {
+            background-image: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+        }
+
+        @view-transition {
+            navigation: auto;
+        }
