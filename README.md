@@ -1,64 +1,61 @@
-This is a concept website for a dental clinic created as a personal web design project. It showcases a modern, responsive design, emphasizing friendly, professional dental services.
+##Bright Smile Dental Website
 
-Features
+This is a commercial-style website concept created as a project for a Web Design portfolio. It represents a modern dental clinic, showcasing its services, dentist profile, patient testimonials, and contact information.
 
-Fully responsive design for desktop and mobile
+##Features
 
-Smooth scrolling navigation
+-Fully responsive design for desktop and mobile devices
 
-Sections include:
+-Single-page layout with smooth scrolling
 
-Main Sections
+-Multiple sections including:
 
-Home / Hero
+-Main Sections
 
-Services
+-Home / Hero
 
-About / Dentist Profile
+-Services
 
-Testimonials
+-About / Dentist Profile
 
-Contact / Call-to-Action
+-Testimonials
 
-Key Elements
+-Contact / Call-to-Action
 
-Interactive hero section with animated graphics
+-Key Elements
 
-Services cards with hover effects
+-Interactive hero with animations
 
-Patient testimonials
+-Service cards with hover effects
 
-Contact information with call-to-action buttons
+-Testimonials from patients
 
-Technologies Used
+-Contact section with phone, address, and hours
 
-HTML5 & CSS3
+###Technologies Used
 
-JavaScript
+-HTML5 & CSS3
 
-Tailwind CSS
+-JavaScript
 
-Google Fonts
+-Tailwind CSS for styling
 
-SVG graphics for icons and illustrations
+-Google Fonts
 
-Live Demo
+-SVG graphics for icons and illustrations
 
-The website is hosted for free on Netlify: https://brightsmile-dental.netlify.app
+##Live Demo
 
-Notes
+-The website is hosted for free on Netlify: https://brightsmile-dental.netlify.app
 
-This project is for educational and portfolio purposes.
+#Notes
+
+This project is primarily for educational and portfolio purposes.
 
 Design focuses on accessibility, modern UI patterns, and responsive layout.
 
-All code follows best practices in web design and front-end development.
+All code follows web design best practices.
 
-About
-
-Bright Smile Dental is a concept project showcasing a professional, modern dental clinic website.
-It demonstrates responsive layouts, animated components, and a clean visual hierarchy. This project is not affiliated with any real dental clinic.
-
-Author
+#Author
 
 Marko Jakovljević
